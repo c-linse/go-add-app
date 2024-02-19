@@ -1,0 +1,6 @@
+.vscode/
+.idea/
+*.exe
+cm-go-chart/Chart.lock
+
+repositorites/gorm.db
