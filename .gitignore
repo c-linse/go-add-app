@@ -1,5 +1,6 @@
 .vscode/
 .idea/
+main
 *.exe
 cm-go-chart/Chart.lock
 
