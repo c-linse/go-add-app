@@ -2,4 +2,3 @@
 .idea/
 main
 *.exe
-go-add-app-chart/Chart.lock
