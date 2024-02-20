@@ -2,6 +2,4 @@
 .idea/
 main
 *.exe
-cm-go-chart/Chart.lock
-
-repositorites/gorm.db
+go-add-app-chart/Chart.lock
