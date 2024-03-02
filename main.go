@@ -16,6 +16,9 @@ type Result struct {
 	Sum int `json:"sum"`
 }
 
+func healthHandler(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusOK)
+}
 func addHandler(w http.ResponseWriter, r *http.Request) {
 	var nums Numbers
 	err := json.NewDecoder(r.Body).Decode(&nums)
@@ -42,6 +45,7 @@ func addHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/add", addHandler)
+	http.HandleFunc("/health", healthHandler)
 
 	fmt.Println("Starting server on :8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))
