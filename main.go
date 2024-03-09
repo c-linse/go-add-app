@@ -32,7 +32,7 @@ func addHandler(w http.ResponseWriter, r *http.Request) {
 	result := Result{Sum: sum}
 	jsonResult, err := json.Marshal(result)
 	if err != nil {
-		http.Erdror(w, err.Error(), http.StatusInternalServerError)
+		http.Erddror(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
